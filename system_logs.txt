@@ -1,0 +1,6 @@
+Time: 2025-02-22 17:21:22, {'CPU Usage': '6.2%', 'Memory Usage': '47.5%', 'Disk Usage': '52.1%'}
+Time: 2025-02-22 17:21:28, {'CPU Usage': '6.1%', 'Memory Usage': '47.4%', 'Disk Usage': '52.1%'}
+Time: 2025-02-22 17:21:34, {'CPU Usage': '5.0%', 'Memory Usage': '47.4%', 'Disk Usage': '52.1%'}
+Time: 2025-02-22 17:21:40, {'CPU Usage': '11.5%', 'Memory Usage': '47.4%', 'Disk Usage': '52.1%'}
+Time: 2025-02-22 17:21:46, {'CPU Usage': '7.3%', 'Memory Usage': '46.9%', 'Disk Usage': '52.1%'}
+Time: 2025-02-22 17:21:52, {'CPU Usage': '6.4%', 'Memory Usage': '46.9%', 'Disk Usage': '52.1%'}
