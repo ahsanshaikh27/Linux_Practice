@@ -10,7 +10,7 @@ def get_system_stats():
     return f"📊 System Monitoring Report:\nCPU: {cpu}%\nMemory: {memory}%\nDisk: {disk}%"
 
 # WhatsApp number (include country code)
-phone_number = "+917219366167"  # Replace with actual recipient
+phone_number = "+9172........"  # Replace with actual recipient
 
 while True:
     message = get_system_stats()
