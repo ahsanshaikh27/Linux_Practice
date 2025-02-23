@@ -3,7 +3,7 @@ import time
 import pywhatkit as kit
 
 # Your WhatsApp number (change as needed)
-phone_number = "+917219366167"  # Replace with your number
+phone_number = "+9172........."  # Replace with your number
 
 # Define daily study plan
 study_plan = {
