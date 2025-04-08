@@ -1,0 +1,90 @@
+✅ Day 2: Advanced File Management & File Permissions
+
+🎯 Goals:
+
+Learn about file permissions (read, write, execute)
+
+Understand chmod, chown, and chgrp commands
+
+Practice hidden files and file viewing commands
+
+📂 1. File Permissions Basics
+Har file/directory ka ek permission hota hai:
+
+ls -l
+
+Example:
+
+-rwxr-xr--  1 user group 4096 Apr 8 10:30 script.sh
+Breakdown:
+
+-: file type (- for file, d for directory)
+
+rwx: Owner permissions
+
+r-x: Group permissions
+
+r--: Others permissions
+
+🔧 2. Changing Permissions – chmod
+Symbolic mode:
+
+
+chmod u+x file.sh      # user ko execute permission do
+chmod g-w file.txt     # group se write permission hatao
+chmod o+r file.txt     # others ko read permission do
+
+Numeric mode:
+
+Symbol	Value
+r	4
+w	2
+x	1
+
+Total example:
+
+chmod 755 file.sh → Owner = rwx (7), Group = r-x (5), Others = r-x (5)
+
+3. Change Ownership – chown
+
+sudo chown newuser:newgroup file.txt
+
+🧾 4. Working with Hidden Files
+Create a hidden file:
+
+touch .hiddenfile
+View hidden files:
+
+ls -a
+📘 5. View File Content
+
+Command	              Description
+
+cat file.txt	     View all content
+more file.txt	     Page by page
+less file.txt	     Scroll up/down
+head -n 5 file.txt   First 5 lines
+tail -n 5 file.txt   Last 5 lines
+
+🧪 Practical Tasks
+
+✅ Task 1: Create 3 files and change permissions
+
+touch one.txt two.txt three.sh
+chmod 644 one.txt
+chmod 600 two.txt
+chmod +x three.sh
+
+✅ Task 2: Make three.sh executable and test it
+
+echo 'echo Hello from script!' > three.sh
+chmod +x three.sh
+./three.sh
+
+✅ Task 3: Create a hidden file
+
+touch .secret.txt
+ls -a
+✅ Task 4: Change ownership (if possible)
+
+sudo chown $USER:$USER one.txt
