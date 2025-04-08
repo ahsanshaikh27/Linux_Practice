@@ -1,0 +1,108 @@
+✅ Day 3: Users, Groups & Permissions (In-Depth)
+
+🎯 Goals:
+
+Understand user & group types
+
+Learn to manage users and groups
+
+Understand file ownership & permission relations
+
+
+👤 1. Types of Users in Linux
+
+Type	Description
+Root	Superuser (Full system access)
+Normal	Regular users (limited access)
+System	Used for services, like mysql, nginx
+
+💻 2. User Management Commands
+
+Command	                         Description
+
+adduser username	          Create user
+passwd username	                Set/change user password
+usermod -aG groupname username	Add user to group
+deluser username	        Delete user
+
+
+Example:
+
+bash
+
+sudo adduser ahsan
+
+sudo passwd ahsan
+
+👥 3. Group Management Commands
+
+Command	                        Description
+
+addgroup groupname	        Create a group
+gpasswd -a username groupname	Add user to group
+gpasswd -d username groupname	Remove user from group
+delgroup groupname	        Delete group
+
+Example:
+
+bash
+
+sudo addgroup devops
+
+sudo usermod -aG devops ahsan
+
+🗃️ 4. File Ownership with Users & Groups
+
+Check:-
+
+bash
+
+ls -l file.txt
+
+see output:-        -rw-r--r-- 1 ahsan devops 123 Apr 8  file.txt
+
+Owner = ahsan
+
+Group = devops
+
+Change Owner:
+
+
+sudo chown newuser:newgroup file.txt
+
+🔐 5. /etc/passwd, /etc/group, /etc/shadow — Behind the Scenes
+/etc/passwd → All user accounts
+
+/etc/group → Group info
+
+/etc/shadow → Encrypted passwords (root only)
+
+View:
+
+cat /etc/passwd | grep ahsan
+
+
+🧪 Practical Tasks:--
+
+✅ Task 1: Create a new user testuser
+
+sudo adduser testuser
+
+✅ Task 2: Create a group teamx and add user
+
+sudo addgroup teamx
+
+sudo usermod -aG teamx testuser
+
+✅ Task 3: Create a file owned by testuser
+
+sudo touch test.txt
+
+sudo chown testuser:teamx test.txt
+
+ls -l test.txt
+
+✅ Task 4: Change permissions
+
+sudo chmod 750 test.txt
+
