@@ -1,0 +1,67 @@
+✅ Day 1: Introduction & File Management (Basics)
+
+🎯 Goals:
+
+Understand what Linux is.
+
+Learn basic file and directory management commands.
+
+🧠 1. What is Linux?
+
+Linux is an open-source operating system.
+
+It's used in servers, desktops, mobile devices, and cloud infrastructure.
+
+The most common shell in Linux is Bash (Bourne Again SHell).
+
+💻 2. Basic Linux Commands (File & Directory Management)
+
+
+ Command                	Description
+
+pwd	                    Print current directory
+ls	                    List files in the current directory
+cd	                    Change directory
+mkdir	                    Create a new directory
+touch	                    Create a new empty file
+cp	                    Copy files or directories
+mv	                    Move or rename files
+rm	                    Delete files
+rmdir	                    Remove empty directory
+cat	                    Display content of a file
+clear	                    Clear terminal screen
+ 
+
+🔧 3. Practical Tasks
+
+
+✅ Task 1: Check your current location
+
+pwd
+
+✅ Task 2: Create a directory called practice
+
+mkdir practice
+cd practice
+
+✅ Task 3: Create 3 files
+
+touch file1.txt file2.txt file3.txt
+ls
+
+✅ Task 4: Rename file1.txt to renamed.txt
+
+mv file1.txt renamed.txt
+
+✅ Task 5: Copy renamed.txt to a new file called copy.txt
+
+cp renamed.txt copy.txt
+
+✅ Task 6: Delete file2.txt
+
+rm file2.txt
+
+✅ Task 7: Display the contents of a file
+
+echo "Hello Linux!" > hello.txt
+cat hello.txt
